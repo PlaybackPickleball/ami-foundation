@@ -124,7 +124,7 @@ const en = {
       {
         title: 'Digital Skills for Everyone',
         status: 'Developing',
-        text: 'We are developing practical digital skills, including technology people can use close to home. This work has not started.',
+        text: 'We are developing free courses in AI and other skills for underprivileged people in Vietnam.',
       },
       {
         title: 'Better Living Spaces',
@@ -380,7 +380,7 @@ const vi = {
       {
         title: 'Kỹ năng số cho mọi người',
         status: 'Đang phát triển',
-        text: 'Chúng tôi đang phát triển kỹ năng số thiết thực, gồm công nghệ dùng được gần nhà. Việc này chưa bắt đầu.',
+        text: 'Chúng tôi đang phát triển các khóa học miễn phí về AI và các kỹ năng khác cho những người còn thiếu thốn ở Việt Nam.',
       },
       {
         title: 'Không gian sống tốt hơn',
