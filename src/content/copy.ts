@@ -42,28 +42,6 @@ const en = {
     photoCredit: 'Photo: CEphoto, Uwe Aranas. Cropped from the original. CC BY-SA 3.0.',
     sampleStill:
       'Sample still of a Hanoi street vendor. Not a frame from this episode, and not the person the episode is planned around.',
-    cards: [
-      {
-        title: 'Stories of Vietnam',
-        text: 'Giving everyday people a voice through a weekly documentary of real lives, hopes, and resilience.',
-        href: '/stories',
-      },
-      {
-        title: 'Community Support',
-        text: 'Practical help so hardworking families, including street vendors, can build a more independent life.',
-        href: '/initiatives',
-      },
-      {
-        title: 'Better Living Spaces',
-        text: 'Exploring safer, more dignified homes and the practical improvements that make them possible.',
-        href: '/initiatives',
-      },
-      {
-        title: 'Education & Skills',
-        text: 'Making English, technology, AI, and practical skills more accessible to people who need them.',
-        href: '/initiatives',
-      },
-    ],
   },
   mission: {
     eyebrow: 'Why we exist',
@@ -88,7 +66,7 @@ const en = {
     close: 'One story every week. One opportunity to make a difference.',
     watch: 'Watch the Latest Episode',
     all: 'Explore All Stories',
-    ageLine: '62 Years Old · 7 Grandchildren',
+    ageLine: 'Takes care of 7 grandchildren on a $10 a day income.',
     episodeOne: 'Episode 1',
     comingSoon: 'Coming Soon',
   },
@@ -320,28 +298,6 @@ const vi = {
     photoCredit: 'Ảnh: CEphoto, Uwe Aranas. Đã cắt từ bản gốc. CC BY-SA 3.0.',
     sampleStill:
       'Ảnh mẫu một người bán hàng rong ở Hà Nội. Không phải khung hình của tập này, và không phải người mà tập phim dự định kể.',
-    cards: [
-      {
-        title: 'Chuyện Việt Nam',
-        text: 'Cho người đời thường một tiếng nói, qua loạt phim tài liệu hằng tuần về đời sống, hy vọng và sức chịu đựng.',
-        href: '/stories',
-      },
-      {
-        title: 'Hỗ trợ cộng đồng',
-        text: 'Giúp thiết thực để các gia đình chăm chỉ, kể cả người bán hàng rong, dựng một đời tự lập hơn.',
-        href: '/initiatives',
-      },
-      {
-        title: 'Chỗ ở tốt hơn',
-        text: 'Đang tìm những chỗ ở an toàn, đàng hoàng hơn, và những cải thiện thiết thực để làm được điều đó.',
-        href: '/initiatives',
-      },
-      {
-        title: 'Học và nghề',
-        text: 'Đưa tiếng Anh, công nghệ, AI và nghề thiết thực đến gần hơn với người cần nhất.',
-        href: '/initiatives',
-      },
-    ],
   },
   mission: {
     eyebrow: 'Vì sao chúng tôi có mặt',
@@ -366,7 +322,7 @@ const vi = {
     close: 'Mỗi tuần một câu chuyện. Mỗi lần một cơ hội để tạo khác biệt.',
     watch: 'Xem tập mới nhất',
     all: 'Xem mọi câu chuyện',
-    ageLine: '62 tuổi · 7 cháu',
+    ageLine: 'Chăm sóc 7 người cháu với thu nhập 10 đô la mỗi ngày.',
     episodeOne: 'Tập 1',
     comingSoon: 'Sắp có',
   },

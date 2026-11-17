@@ -44,16 +44,6 @@ export function HomePage() {
               {t.hero.support}
             </Link>
           </div>
-          <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {t.hero.cards.map((card) => (
-              <li key={card.title}>
-                <Link to={card.href} className="flex h-full flex-col bg-cream/95 p-4 text-ink hover:bg-cream">
-                  <span className="font-serif text-xl text-pine">{card.title}</span>
-                  <span className="mt-2 text-sm leading-relaxed text-ink/75">{card.text}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 
