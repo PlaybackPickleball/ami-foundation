@@ -17,7 +17,7 @@ function githubPagesSpaFallback(): Plugin {
   }
 }
 
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/ami-foundation/' : '/',
+export default defineConfig({
+  base: '/',
   plugins: [react(), tailwindcss(), githubPagesSpaFallback()],
-}))
+})
