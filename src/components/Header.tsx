@@ -39,7 +39,7 @@ export function Header() {
     >
       <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3 lg:px-6">
         <NavLink to="/" end className="shrink-0">
-          <Logo variant={onHome ? 'on-dark' : 'on-light'} className="h-14 sm:h-16" />
+          <Logo variant={onHome ? 'on-dark' : 'on-light'} className="h-16 sm:h-20" />
         </NavLink>
 
         <nav className="ml-auto hidden items-center gap-3 text-sm xl:flex" aria-label={t.nav.explore}>
