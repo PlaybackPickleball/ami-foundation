@@ -37,12 +37,12 @@ export function Header() {
           : 'sticky top-0 z-40 border-b border-ink/10 bg-cream/95 text-ink backdrop-blur-md'
       }
     >
-      <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3 lg:px-6">
+      <div className="mx-auto flex max-w-6xl flex-nowrap items-center gap-3 px-4 py-3 lg:px-6">
         <NavLink to="/" end className="shrink-0">
-          <Logo variant={onHome ? 'on-dark' : 'on-light'} className="h-16 sm:h-20" />
+          <Logo variant={onHome ? 'on-dark' : 'on-light'} className="h-24 sm:h-28" />
         </NavLink>
 
-        <nav className="ml-auto hidden items-center gap-3 text-sm xl:flex" aria-label={t.nav.explore}>
+        <nav className="ml-auto hidden shrink-0 items-center gap-3 text-sm whitespace-nowrap xl:flex" aria-label={t.nav.explore}>
           {links.map((link) => (
             <NavLink key={link.key} to={link.to} end={link.end} className={({ isActive }) => linkClass(isActive)}>
               {t.nav[link.key]}
