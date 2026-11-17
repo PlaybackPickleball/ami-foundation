@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom'
 import { NewsletterForm } from '../components/SiteForms'
+import { WhatIcon } from '../components/WhatIcons'
 import { featuredEpisode } from '../content/episodes'
+import { trailerVideoId } from '../content/media'
 import { useDocumentTitle } from '../i18n/title'
 import { useI18n } from '../i18n/language'
 import { publicPath } from '../publicPath'
+
+const whatIcons = ['hand', 'book', 'store', 'people'] as const
 
 const btn =
   'inline-flex items-center justify-center rounded-full bg-brown px-5 py-3 text-sm font-medium text-cream hover:bg-pine'
@@ -29,8 +33,9 @@ export function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/75 to-ink/45" />
         <div className="relative z-10 mx-auto flex min-h-[100svh] w-full max-w-6xl flex-col justify-end px-6 pt-32 pb-10">
-          <h1 className="max-w-3xl font-serif text-5xl leading-[1.02] sm:text-7xl">{t.hero.title}</h1>
+          <h1 className="max-w-[46rem] font-serif text-5xl leading-[1.05] sm:text-6xl">{t.hero.title}</h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-cream/90">{t.hero.line}</p>
+          <p className="mt-4 max-w-2xl leading-relaxed text-cream/90">{t.hero.body}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link to="/stories" className={gold}>
               {t.hero.watchSeries}
@@ -49,14 +54,6 @@ export function HomePage() {
               </li>
             ))}
           </ul>
-          <p className="mt-4 text-xs text-cream/70">
-            <a
-              className="underline-offset-2 hover:underline"
-              href="https://commons.wikimedia.org/wiki/File:Hanoi_Vietnam_Street-vendors-in-Hanoi-02.jpg"
-            >
-              {t.hero.photoCredit}
-            </a>
-          </p>
         </div>
       </section>
 
@@ -78,11 +75,11 @@ export function HomePage() {
                 </Link>
               </div>
               <div className="flex flex-col justify-center p-6 sm:p-8">
-                <p className="text-xs font-medium tracking-[0.18em] text-brown uppercase">{t.storiesHome.episodeOne}</p>
+                <p className="text-xs font-medium tracking-[0.18em] text-brown uppercase">
+                  {trailerVideoId ? t.storiesHome.episodeOne : t.storiesHome.comingSoon}
+                </p>
                 <h3 className="mt-3 font-serif text-4xl text-pine">{feature.title[lang]}</h3>
                 <p className="mt-3 text-lg text-ink">{t.storiesHome.ageLine}</p>
-                <p className="mt-4 text-sm leading-relaxed text-brown">{feature.label[lang]}</p>
-                <p className="mt-3 text-sm leading-relaxed text-ink/70">{t.hero.sampleStill}</p>
               </div>
             </div>
           </article>
@@ -124,10 +121,11 @@ export function HomePage() {
           <p className="text-xs font-medium tracking-[0.22em] text-pine uppercase">{t.what.eyebrow}</p>
           <h2 className="mt-3 max-w-3xl font-serif text-4xl text-pine sm:text-5xl">{t.what.title}</h2>
           <p className="mt-4 max-w-2xl leading-relaxed text-ink/80">{t.what.lede}</p>
-          <ul className="mt-8 grid gap-4 sm:grid-cols-2">
-            {t.what.items.map((item) => (
-              <li key={item.title} className="border border-ink/10 bg-white p-5">
-                <h3 className="font-serif text-2xl text-pine">{item.title}</h3>
+          <ul className="mt-8 grid items-stretch gap-4 sm:grid-cols-2">
+            {t.what.items.map((item, index) => (
+              <li key={item.title} className="flex h-full flex-col border border-ink/10 bg-white p-5">
+                <WhatIcon name={whatIcons[index] ?? 'hand'} />
+                <h3 className="mt-4 font-serif text-2xl text-pine">{item.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-ink/80">{item.text}</p>
               </li>
             ))}
@@ -193,7 +191,7 @@ export function HomePage() {
             <Link to="/get-involved" className={btn}>
               {t.involved.cta}
             </Link>
-            <Link to="/contact" className={ghostInk}>
+            <Link to="/get-involved#get-in-touch" className={ghostInk}>
               {t.involved.contact}
             </Link>
           </div>
