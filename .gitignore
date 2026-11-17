@@ -1,0 +1,38 @@
+# dependencies
+node_modules/
+
+# production
+dist/
+dist-ssr/
+
+# env files and secrets
+.env
+.env.*
+secrets/
+*.pem
+*.key
+
+# logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# editor and OS junk
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*~
+
+# local tooling
+*.local
+.oxlintcache
