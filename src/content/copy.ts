@@ -119,7 +119,7 @@ const en = {
       {
         title: 'Free Language Learning',
         status: 'Developing',
-        text: 'We are developing a learning offer in languages people can use. It is not open, and it has no class list.',
+        text: 'We are developing a language app to learn Vietnamese and English.',
       },
       {
         title: 'Digital Skills for Everyone',
@@ -375,7 +375,7 @@ const vi = {
       {
         title: 'Học ngôn ngữ không mất phí',
         status: 'Đang phát triển',
-        text: 'Chúng tôi đang phát triển một lối học ngôn ngữ dùng được trong đời thường. Chưa mở, và chưa có danh sách lớp.',
+        text: 'Chúng tôi đang phát triển một ứng dụng ngôn ngữ để học tiếng Việt và tiếng Anh.',
       },
       {
         title: 'Kỹ năng số cho mọi người',

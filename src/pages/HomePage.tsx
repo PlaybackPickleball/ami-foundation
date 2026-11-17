@@ -56,13 +56,23 @@ export function HomePage() {
             <div className="grid md:grid-cols-2">
               <div className="relative min-h-80">
                 <img src={publicPath('media/drink-vendor-card.jpg')} alt={t.hero.photoAlt} className="absolute inset-0 h-full w-full object-cover" />
-                <Link
-                  to={`/stories/${feature.slug}`}
-                  aria-label={feature.label[lang]}
-                  className="absolute top-1/2 left-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-gold text-ink shadow-lg"
-                >
-                  <span aria-hidden="true" className="ml-1 block h-0 w-0 border-y-[10px] border-l-[16px] border-y-transparent border-l-ink" />
-                </Link>
+                {trailerVideoId ? (
+                  <a
+                    href={`https://youtu.be/${trailerVideoId}`}
+                    aria-label={feature.title[lang]}
+                    className="absolute top-1/2 left-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-gold text-ink shadow-lg"
+                  >
+                    <span aria-hidden="true" className="ml-1 block h-0 w-0 border-y-[10px] border-l-[16px] border-y-transparent border-l-ink" />
+                  </a>
+                ) : (
+                  <Link
+                    to={`/stories/${feature.slug}`}
+                    aria-label={feature.label[lang]}
+                    className="absolute top-1/2 left-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-gold text-ink shadow-lg"
+                  >
+                    <span aria-hidden="true" className="ml-1 block h-0 w-0 border-y-[10px] border-l-[16px] border-y-transparent border-l-ink" />
+                  </Link>
+                )}
               </div>
               <div className="flex flex-col justify-center p-6 sm:p-8">
                 <p className="text-xs font-medium tracking-[0.18em] text-brown uppercase">

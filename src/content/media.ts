@@ -29,7 +29,7 @@ export const sampleFilms = [
 ] as const
 
 /**
- * Homepage trailer. Replace this string with the YouTube id when the film is ready.
- * Left blank on purpose so no stand-in id is invented.
+ * Homepage trailer for The Woman Behind the Drink Stand.
+ * https://youtu.be/t9rMrxlJwks
  */
-export const trailerVideoId = ''
+export const trailerVideoId = 't9rMrxlJwks'
